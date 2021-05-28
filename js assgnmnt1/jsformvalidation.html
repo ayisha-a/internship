@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+          function validate(b)
+    {
+        var a = /^\d{10}$/;
+        if (a.test(b))
+        {
+            alert("Your Mobile Number Is Valid.")
+        }
+        else
+        {
+            alert("Your Mobile Number Is Not Valid.")
+        }
+    };
+    </script>
+</head>
+<body>
+<form action="" name="myForm">
+    <input id="name" placeholder="Name" type="text" required><br>
+    <br>
+    <input type="email" id="mail" placeholder="Email id" required><br>
+    <br>
+    <input type="number" id="age" min="1" max="110" placeholder="Age" required><br>
+    <br>
+    <input type="text" id="mobi" name="mob" placeholder="Mobile No:" ><br>
+    <br>
+    <button type="submit" onClick="validate(mob.value)">Submit</button>
+
+</form>
+</body>
+</html>
